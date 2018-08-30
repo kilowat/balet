@@ -1,0 +1,84 @@
+$ic-answer-name: 'ic-answer';
+$ic-answer-x: 25px;
+$ic-answer-y: 0px;
+$ic-answer-offset-x: -25px;
+$ic-answer-offset-y: 0px;
+$ic-answer-width: 20px;
+$ic-answer-height: 20px;
+$ic-answer-total-width: 45px;
+$ic-answer-total-height: 45px;
+$ic-answer-image: '/images/sprite.png';
+$ic-answer: (25px, 0px, -25px, 0px, 20px, 20px, 45px, 45px, '/images/sprite.png', 'ic-answer', );
+$ic-auth-name: 'ic-auth';
+$ic-auth-x: 20px;
+$ic-auth-y: 25px;
+$ic-auth-offset-x: -20px;
+$ic-auth-offset-y: -25px;
+$ic-auth-width: 15px;
+$ic-auth-height: 15px;
+$ic-auth-total-width: 45px;
+$ic-auth-total-height: 45px;
+$ic-auth-image: '/images/sprite.png';
+$ic-auth: (20px, 25px, -20px, -25px, 15px, 15px, 45px, 45px, '/images/sprite.png', 'ic-auth', );
+$ic-phone-name: 'ic-phone';
+$ic-phone-x: 0px;
+$ic-phone-y: 0px;
+$ic-phone-offset-x: 0px;
+$ic-phone-offset-y: 0px;
+$ic-phone-width: 25px;
+$ic-phone-height: 25px;
+$ic-phone-total-width: 45px;
+$ic-phone-total-height: 45px;
+$ic-phone-image: '/images/sprite.png';
+$ic-phone: (0px, 0px, 0px, 0px, 25px, 25px, 45px, 45px, '/images/sprite.png', 'ic-phone', );
+$ic-play-name: 'ic-play';
+$ic-play-x: 0px;
+$ic-play-y: 25px;
+$ic-play-offset-x: 0px;
+$ic-play-offset-y: -25px;
+$ic-play-width: 20px;
+$ic-play-height: 20px;
+$ic-play-total-width: 45px;
+$ic-play-total-height: 45px;
+$ic-play-image: '/images/sprite.png';
+$ic-play: (0px, 25px, 0px, -25px, 20px, 20px, 45px, 45px, '/images/sprite.png', 'ic-play', );
+$spritesheet-width: 45px;
+$spritesheet-height: 45px;
+$spritesheet-image: '/images/sprite.png';
+$spritesheet-sprites: ($ic-answer, $ic-auth, $ic-phone, $ic-play, );
+$spritesheet: (45px, 45px, '/images/sprite.png', $spritesheet-sprites, );
+
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

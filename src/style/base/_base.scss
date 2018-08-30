@@ -1,0 +1,31 @@
+html{
+  font-size: $font-size;
+  line-height: $base-line-height;
+}
+body {
+  background-color: #fff;
+}
+a:hover{
+  color: $color-link-hover;
+}
+main {
+   min-height: calc(100vh - (#{$footer-height} + #{$header-height}));
+}
+
+.left-sidebar{
+
+}
+.right-sidebar{
+
+}
+.content{
+
+}
+//if use grid system
+.wrapper{
+  max-width: $container-max-width;
+  min-width: $container-min-width;
+  margin: auto;
+  padding-left: $container-padding;
+  padding-right: $container-padding;
+}

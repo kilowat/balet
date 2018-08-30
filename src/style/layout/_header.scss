@@ -1,0 +1,70 @@
+.header{
+  height: $header-height;
+  &.header-public{
+    height: 100vh;
+    background-color: #383533;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .header-top-block {
+    display: flex;
+    height: 110px;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: -20px;
+    margin-right: -20px;
+    color: #fff;
+    font-family: $font-ptsans;
+    .top-cell{
+      padding-left: 20px;
+      padding-right: 20px;
+      &.logo-cell{
+        padding-right: 40px;
+        >a{
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          img{
+            margin-right: 20px;
+          }
+          .logo-text{
+            color: #fff;
+            font-size: 42px;
+            font-family: $font-pt-serif;
+          }
+        }
+      }
+      &.phone-number-cell{
+        .phone-number{
+          display: flex;
+          align-items: center;
+          i{
+            margin-right: 15px;
+          }
+          ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+          }
+        }
+      }
+      &.auth-cell{
+        .auth-link{
+          text-decoration: none;
+          color: #fff;
+          >*{
+            display: inline-block;
+            vertical-align: middle;
+          }
+          i{
+            margin-right: 5px;
+          }
+          span{
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

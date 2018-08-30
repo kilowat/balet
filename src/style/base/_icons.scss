@@ -1,0 +1,12 @@
+i{
+  display: inline-block;
+}
+.ic-phone{
+  @include sprite($ic-phone);
+}
+.ic-auth{
+  @include sprite($ic-auth);
+}
+.ic-play{
+  @include sprite($ic-play);
+}
