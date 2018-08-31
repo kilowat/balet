@@ -1,5 +1,6 @@
 .top-menu-row{
   .top-menu{
+    margin-top: 10px;
     display: flex;
     list-style: none;
     margin: 0;
@@ -7,6 +8,7 @@
     justify-content: space-around;
     li{
       a{
+        font-weight: 300;
         color: #fff;
         text-decoration: none;
         text-transform: uppercase;

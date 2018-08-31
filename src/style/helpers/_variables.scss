@@ -14,6 +14,7 @@ $base-line-height: 1.5;
 ////____text colors property___//////
 //$color-primary:
 $color-acent: #940119;
+$color-acent-hover: lighten($color-acent, 10%);
 //$color-secondary:
 
 $color-black: #000;

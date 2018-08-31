@@ -12,7 +12,7 @@
     border-radius: 25px;
     text-decoration: none;
     &:hover{
-      background-color: lighten($color-acent, 10%);
+      background-color: $color-acent-hover;
     }
   }
   i{

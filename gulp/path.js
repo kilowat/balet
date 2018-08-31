@@ -22,7 +22,6 @@ export default {
             `./${ srcDir }/vendor/icheck.min.js`,
             `./${ srcDir }/vendor/slick.min.js`,
             `./${ srcDir }/vendor/phone-mask.js`,
-            `./${ srcDir }/vendor/radialIndicator.min.js`,
             `./${ srcDir }/vendor/jquery.fancybox.js`,
             `./${ srcDir }/vendor/jquery.mobilemenu.js`
         ]

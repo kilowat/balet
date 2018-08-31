@@ -6,8 +6,37 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    &.fixed{
+      .header-top-block{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+        background-color: rgba(0,0,0,0.7);
+        .flex-container{
+          height: 90px;
+          .logo-cell{
+            img{
+              height: 70px;
+            }
+            a{
+              .logo-text{
+                font-size: 32px;
+              }
+            }
+          }
+          .menu-cell{
+            display: block;
+          }
+        }
+      }
+      .top-menu-row{
+        opacity: 0;
+      }
+    }
   }
-  .header-top-block {
+  .header-top-block .flex-container {
     display: flex;
     height: 110px;
     align-items: center;
@@ -35,12 +64,15 @@
           }
         }
       }
+      &.menu-cell{
+        display: none;
+      }
       &.phone-number-cell{
         .phone-number{
           display: flex;
           align-items: center;
           i{
-            margin-right: 15px;
+            margin-right: 5px;
           }
           ul{
             list-style: none;
