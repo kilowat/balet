@@ -6,7 +6,7 @@
   margin-top: 15px;
 }
 .thumb{
-  border: 2px solid $color-silver;
+  border: 2px solid #ccc
 }
 .thumb.pager-active img{
   border: 2px solid $color-acent;
@@ -42,7 +42,7 @@ ul.bxslider {
 /** THEME
 ===================================*/
 .bx-wrapper {
-  text-align: center;
+
 }
 .bx-wrapper .bx-pager,
 .bx-wrapper .bx-controls-auto {
@@ -71,21 +71,19 @@ ul.bxslider {
   padding-top: 20px;
 }
 .bx-wrapper .bx-pager.bx-default-pager a {
-  background: #666;
+  border: 3px solid #aca098;
   text-indent: -9999px;
   display: block;
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   margin: 0 5px;
   outline: 0;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
+  border-radius: 100%;
 }
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .bx-wrapper .bx-pager.bx-default-pager a.active,
 .bx-wrapper .bx-pager.bx-default-pager a:focus {
-  background: #000;
+  border: 3px solid $color-acent;
 }
 .bx-wrapper .bx-pager-item,
 .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
@@ -100,16 +98,65 @@ ul.bxslider {
 }
 /* DIRECTION CONTROLS (NEXT / PREV) */
 .bx-wrapper .bx-prev {
-  left: 0px;
-
+  left: -30px;
+  position: relative;
+  height: 45px;
+  width: 25px;
+  margin-top: 15px!important;
+  &:after{
+    display: block;
+    content: "";
+    height: 4px;
+    width: 25px;
+    position: absolute;
+    background-color: #cdc6c1;
+    top: 8px;
+    transform: rotate(-45deg);
+    z-index: 1;
+  }
+  &:before{
+    display: block;
+    content: "";
+    height: 4px;
+    width: 25px;
+    position: absolute;
+    background-color: #cdc6c1;
+    top: 25px;
+    transform: rotate(-135deg);
+    z-index: 1;
+  }
 }
 .bx-wrapper .bx-prev:hover,
 .bx-wrapper .bx-prev:focus {
   background-position: 0 0;
 }
 .bx-wrapper .bx-next {
-  right: 0px;
-
+  right: -30px;
+  height: 45px;
+  width: 25px;
+  margin-top: 15px!important;
+  &:after{
+    display: block;
+    content: "";
+    height: 4px;
+    width: 25px;
+    position: absolute;
+    background-color: #cdc6c1;
+    top: 8px;
+    transform: rotate(45deg);
+    z-index: 1;
+  }
+  &:before{
+    display: block;
+    content: "";
+    height: 4px;
+    width: 25px;
+    position: absolute;
+    background-color: #cdc6c1;
+    top: 25px;
+    transform: rotate(135deg);
+    z-index: 1;
+  }
 }
 .bx-wrapper .bx-next:hover,
 .bx-wrapper .bx-next:focus {

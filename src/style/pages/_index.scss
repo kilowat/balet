@@ -1,22 +1,116 @@
-
-.news{
-  background-color: #C0C0C0;
-  .news-list{
-    @include wrapper();
-    &:after{
-      content: "";
-      @include col-4();
+.about-school{
+  padding-top: 15px;
+  .flex-container{
+    display: flex;
+    .about-video{
+      width: 50%;
+      margin-right: 10px;
     }
-    .flex-row{
-      @include row-flex();
-      .item{
-        background: #ddd;
-        @include col();
-        @include col-4();
-        margin-bottom: 30px;
-        box-sizing: border-box;
+    .about-text{
+      width: 50%;
+      margin-left: 10px;
+      font-family: $font-alegra;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 1.2;
+      .soc-network{
+        margin-top: 70px;
       }
     }
+  }
+}
+/////////////////////////////////////////
+.banner-block{
+  margin-top: 50px;
+  background-color: #323f36;
+  padding-bottom: 40px;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  .banner-container{
+    display: inline-block;
+    color: #fff;
+    text-align: left;
+    .banner-header{
+      text-align: center;
+      font-size: 37px;
+      font-weight: 500;
+      font-family: $font-alegra;
+      color: #fff;
+      line-height: 1;
+      margin-top: 50px;
+      display: inline-block;
+      margin-bottom: 25px;
+    }
+    .banner-items-row{
+      text-align: center;
+    }
+    .banner-items{
+      text-align: left;
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      margin-bottom: 45px;
+      font-family: $font-alegra;
+      font-size: 17px;
+      list-style: none;
+      li{
+        position: relative;
+        padding-left: 15px;
+        &:before{
+          display:block;
+          position: absolute;
+          content: "";
+          @include sprite($ic-list-type);
+          left: -7px;
+          top: 6px;
+        }
+      }
+    }
+    .button-row{
+      text-align: center;
+      button{
+        display: inline-block;
+      }
+    }
+  }
+}
+//////////////////////////
+.teachers-block{
+  background-color: #f5f4f4;
+  padding-bottom: 100px;
+  .teacher-slider{
+    .teacher-item{
+      display: flex;
+      .teacher-pic{
+        text-align: center;
+        margin-right: 25px;
+        img{
+          border-radius: 100%;
+          border: 1px solid #d7d2d1;
+          padding: 6px;
+        }
+        .teacher-name{
+          font-weight: 600;
+          font-size: 21px;
+          line-height: 1.1;
+        }
+      }
+      .teacher-content{
 
+      }
+    }
+  }
+}
+///////////////////////
+.about-lessons{
+  .block-descr{
+    padding-left: 200px;
+    padding-right: 200px;
+    display: inline-block;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 40px;
   }
 }

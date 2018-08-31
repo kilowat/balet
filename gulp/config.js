@@ -51,7 +51,7 @@ export default {
     //  https://www.npmjs.com/package/gulp-sourcemaps
     sourceMap: {
         init: {
-            loadMaps: true
+            loadMaps: false
         },
         write: {}
     },

@@ -1,7 +1,8 @@
 html{
   font-size: $font-size;
   line-height: $base-line-height;
-  font-family: 'Merriweather', serif;
+  font-family: $font-alegra, serif;
+  color: #342f2a;
 }
 body {
   background-color: #fff;
@@ -29,4 +30,13 @@ main {
   margin: auto;
   padding-left: $container-padding;
   padding-right: $container-padding;
+}
+.text-center{
+  text-align: center;
+}
+.soc-network{
+  .soc-text{
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
 }
