@@ -1,3 +1,5 @@
 {
-	"title":"New project"
+	"title":"New project",
+	"bg": "./images/top-bg-1.jpg",
+	"color": "#383533"
 }

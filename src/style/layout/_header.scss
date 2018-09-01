@@ -2,7 +2,6 @@
   height: $header-height;
   &.header-public{
     height: 100vh;
-    background-color: #383533;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -12,7 +11,7 @@
         top: 0;
         left: 0;
         width: 100%;
-        z-index: 100;
+        z-index: 1000;
         background-color: rgba(0,0,0,0.7);
         .flex-container{
           height: 90px;
