@@ -1,0 +1,185 @@
+.adult-screen{
+  .flex-container{
+    display: flex;
+    justify-content: flex-end;
+    .form-content{
+      width: 45%;
+      margin-right: 15px;
+      .form-text{
+        h1{
+          margin: 0;
+          padding: 0;
+          font-size: 30px;
+          line-height: 1.2;
+          color: #fff;
+          margin-bottom: 20px;
+        }
+      }
+      .cost-text{
+        color: #b5001e;
+        font-size: 24px;
+        strong{
+          font-size: 32px;
+          font-weight: 700;
+          font-family: $font-ptsans;
+        }
+      }
+      .description-text{
+        color: #fff;
+        padding-right: 120px;
+      }
+    }
+    .form-block{
+      width: 250px;
+      .form-row{
+        margin-bottom: 10px;
+        input[type=text]{
+          width: 100%;
+          height: 45px;
+          border-radius: 5px;
+          border:none;
+          background-color: #525150;
+          color: #bbbbbb;
+          font-weight: 300;
+          padding-left: 20px;
+          &{
+            ::-webkit-input-placeholder { /* Chrome */
+                color: #ddd;
+              }
+              :-ms-input-placeholder { /* IE 10+ */
+                color:#ddd;
+              }
+              ::-moz-placeholder { /* Firefox 19+ */
+                color: #ddd;
+                opacity: 1;
+              }
+              :-moz-placeholder { /* Firefox 4 - 18 */
+                color: #ddd;
+                opacity: 1;
+              }
+          }
+        }
+        .btn.btn-red{
+          margin-top: 30px;
+          font-size: 16px;
+          width: 100%;
+          padding-left: 10px;
+          padding-right: 10px;
+          text-align: center;
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.adult-lesson-list{
+  text-align: center;
+  padding-bottom: 80px;
+  .adult-lesson-item{
+    text-align: center;
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+    .adult-lesson-name{
+      color: #342f2a;
+      font-size: 22px;
+      padding: 15px;
+      padding-left:20px;
+      padding-right: 20px;
+      line-height: 1;
+    }
+  }
+}
+
+.group-lessons{
+  background-color: #f5f4f4;
+  .group-lessons-list{
+    text-align: center;
+    padding-bottom: 80px;
+    .group-lesson-item{
+      text-align: center;
+      display: inline-block;
+      vertical-align: top;
+      width: 180px;
+      margin-left: 30px;
+      margin-right: 30px;
+      .group-lesson-pic{
+        height: 170px;
+        width: 170px;
+        display: inline-block;
+        border-radius: 100%;
+        background-color: #dedad9;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        &:before{
+          display: block;
+          position: absolute;
+          height: calc(100% + 10px);
+          width: calc(100% + 10px);
+          border-radius: 100%;
+          border: 1px solid #ccc;
+          content: "";
+          padding: 10px;
+          left: 0;
+          top: 0;
+          margin-left: -5px;
+          margin-top: -5px;
+          box-sizing: border-box;
+        }
+      }
+
+      .group-lesson-name{
+        color: #342f2a;
+        font-size: 22px;
+        padding: 15px;
+        padding-left:20px;
+        padding-right: 20px;
+        line-height: 1;
+      }
+    }
+  }
+}
+
+.personal-lessons{
+  .personal-lessons-list{
+    text-align: center;
+    .peronal-lesson-item{
+      vertical-align: top;
+      display: inline-block;
+      margin-bottom: 40px;
+      width: 40%;
+      margin-left: 40px;
+      margin-right: 40px;
+      .peronal-lesson-pic{
+        height: 170px;
+        width: 170px;
+        display: inline-block;
+        border-radius: 100%;
+        background-color: #dedad9;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        &:before{
+          display: block;
+          position: absolute;
+          height: calc(100% + 10px);
+          width: calc(100% + 10px);
+          border-radius: 100%;
+          border: 1px solid #ccc;
+          content: "";
+          padding: 10px;
+          left: 0;
+          top: 0;
+          margin-left: -5px;
+          margin-top: -5px;
+          box-sizing: border-box;
+        }
+      }
+      .personal-lesson-text{
+        display: inline-block;
+      }
+    }
+  }
+}

@@ -1,8 +1,10 @@
 .btn{
   cursor: pointer;
-  display: flex;
-  align-items: center;
   border:none;
+  &.with-icon{
+    display: flex;
+    align-items: center;
+  }
   &.btn-red{
     background-color: $color-acent;
     padding-left: 30px;
