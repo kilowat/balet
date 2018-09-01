@@ -113,4 +113,59 @@
     line-height: 1.2;
     margin-bottom: 40px;
   }
+  .lessons-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+    .lesson-item{
+      text-align: center;
+      width: 33%;
+      margin-left: -25px;
+      margin-right: -25px;
+      padding: 25px;
+      .lesson-pic{
+
+      }
+      .lesson-name{
+        font-weight: 500;
+        font-size: 18px;
+        margin-bottom: 7px;
+      }
+      .lesson-descr{
+        line-height: 1.5;
+        font-weight: 300;
+      }
+    }
+  }
+}
+//////////////////////
+.photo-gallery{
+  background-color: #eceae9;
+  padding-bottom: 80px;
+  .block-descr{
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 40px;
+  }
+  .gallery-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -7px;
+    margin-right: -7px;
+    .gallery-item{
+      margin: 7px;
+      width: calc(20% - 14px);
+      a{
+        display: block;
+        width: 100%;
+        height: 150px;
+        box-sizing: border-box;
+        background-size: cover;
+        border: 7px solid #fff;
+        background-position: center;
+      }
+    }
+  }
 }

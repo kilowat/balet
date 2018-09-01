@@ -1,4 +1,85 @@
 .footer{
-  background-color: olive;
+  background-color: #5c5858;
   min-height: $footer-height;
+  .footer-content{
+    padding-top: 40px;
+
+    .flex-container{
+      display: flex;
+      justify-content: space-between;
+      .bottom-menu-block{
+        display: flex;
+        ul{
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          margin-right: 50px;
+          li{
+            margin-bottom: 10px;
+            a{
+              color: #f5f4f4;
+              text-decoration: none;
+              &:hover{
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+      .bottom-contact-block{
+        font-family: $font-ptsans;
+        color: #f5f4f4;
+        .phone-number{
+          text-align: right;
+          margin-bottom: 55px;
+          ul{
+            display: inline-block;
+            margin: 0;
+            list-style: none;
+            margin-left: 5px;
+            padding: 0;
+          }
+        }
+        .social-links{
+          ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: right;
+            li{
+              display: inline-block;
+              vertical-align: middle;
+              margin-left: 15px;
+              &:last-child{
+                margin-right: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.decor-row{
+  height: 58px;
+  img{
+    display: inline-block;
+  }
+}
+.bottom-block{
+  border-top: 1px solid #8d8988;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-weight: 300;
+  .flex-container{
+    display: flex;
+    justify-content: space-between;
+    color: #f5f4f4;
+    a{
+      color: #f5f4f4;
+      &:hover{
+        color: $color-link-hover;
+      }
+    }
+  }
 }

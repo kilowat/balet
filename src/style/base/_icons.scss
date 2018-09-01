@@ -1,6 +1,41 @@
 i{
   display: inline-block;
 }
+.ic-vk{
+  @include sprite($ic-vk);
+  &:hover{
+      @include sprite($ic-vk-hover);
+  }
+}
+
+.ic-fb{
+  @include sprite($ic-fb);
+  &:hover{
+      @include sprite($ic-fb-hover);
+  }
+}
+
+.ic-inst{
+  @include sprite($ic-inst);
+  &:hover{
+      @include sprite($ic-inst-hover);
+  }
+}
+
+.ic-ok{
+  @include sprite($ic-ok);
+  &:hover{
+      @include sprite($ic-ok-hover);
+  }
+}
+
+.ic-you{
+  @include sprite($ic-you);
+  &:hover{
+      @include sprite($ic-you-hover);
+  }
+}
+
 .ic-phone{
   @include sprite($ic-phone);
 }
