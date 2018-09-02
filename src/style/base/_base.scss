@@ -7,6 +7,12 @@ html{
 body {
   background-color: #fff;
 }
+.ruble{
+  font-family: $font-ruble;
+}
+.price-value{
+  font-family: $font-ptsans;
+}
 a:hover{
   color: $color-link-hover;
 }

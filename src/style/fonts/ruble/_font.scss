@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'als_rublregular';
+    src: url('#{$font-path}ruble/rouble-webfont.eot');
+    src: url('#{$font-path}ruble/rouble-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$font-path}ruble/rouble-webfont.woff') format('woff'),
+         url('/#{$font-path}ruble/rouble-webfont.ttf') format('truetype'),
+         url('#{$font-path}ruble/rouble-webfont.svg#als_rublregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

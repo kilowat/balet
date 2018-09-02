@@ -145,40 +145,154 @@
 .personal-lessons{
   .personal-lessons-list{
     text-align: center;
-    .peronal-lesson-item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .personal-lesson-item{
       vertical-align: top;
-      display: inline-block;
-      margin-bottom: 40px;
-      width: 40%;
-      margin-left: 40px;
-      margin-right: 40px;
-      .peronal-lesson-pic{
-        height: 170px;
-        width: 170px;
-        display: inline-block;
-        border-radius: 100%;
-        background-color: #dedad9;
-        background-size: cover;
-        background-position: center;
-        position: relative;
-        &:before{
-          display: block;
-          position: absolute;
-          height: calc(100% + 10px);
-          width: calc(100% + 10px);
+      margin: 20px;
+      width: calc(50% - 150px);
+      box-sizing: border-box;
+      .flex-container{
+        display: flex;
+        align-items: center;
+        .personal-lesson-pic{
+          height: 176px;
+          width: 176px;
+          display: inline-block;
           border-radius: 100%;
-          border: 1px solid #ccc;
-          content: "";
-          padding: 10px;
-          left: 0;
-          top: 0;
-          margin-left: -5px;
-          margin-top: -5px;
-          box-sizing: border-box;
+          background-color: #dedad9;
+          background-size: cover;
+          background-position: center;
+          position: relative;
+          &:before{
+            display: block;
+            position: absolute;
+            height: calc(100% + 10px);
+            width: calc(100% + 10px);
+            border-radius: 100%;
+            border: 1px solid #ccc;
+            content: "";
+            padding: 10px;
+            left: 0;
+            top: 0;
+            margin-left: -5px;
+            margin-top: -5px;
+            box-sizing: border-box;
+          }
+        }
+        .personal-lesson-text{
+          width: calc(100% - 190px);
+          font-weight: 500;
+          font-size: 20px;
+          text-align: left;
+          margin-left: 20px;
+          line-height: 1.2;
         }
       }
-      .personal-lesson-text{
-        display: inline-block;
+    }
+  }
+  .personal-text-descr{
+    font-size: 20px;
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: 70px;
+    margin-top: 70px;
+    padding-left: 200px;
+    padding-right: 200px;
+    line-height: 1.2;
+  }
+}
+.prices-block{
+  background-color: #f5f4f4;
+  padding-bottom: 80px;
+  .price-list-wrapper{
+    max-width: 900px;
+    margin: auto;
+    .price-list{
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -15px;
+      margin-right: -15px;
+      .price-item{
+        margin: 15px;
+        width: calc(33% - 30px);
+        background-color: #fff;
+        border-radius: 12px;
+        text-align: center;
+        &:nth-child(1){
+          .price-name{
+            background-color: #a9a6a6;
+          }
+          .price-value-row{
+            color: #a9a6a6;
+          }
+        }
+        &:nth-child(2){
+          .price-name{
+            background-color: #8a8585;
+          }
+          .price-value-row{
+            color: #8a8585;
+          }
+        }
+        &:nth-child(3){
+          .price-name{
+            background-color: #676464;
+          }
+          .price-value-row{
+            color: #676464;
+          }
+        }
+        &:nth-child(4){
+          .price-name{
+            background-color: #5c5858;
+          }
+          .price-value-row{
+            color: #5c5858;
+          }
+        }
+        &:nth-child(5){
+          .price-name{
+            background-color: #474242;
+          }
+          .price-value-row{
+            color: #474242;
+          }
+        }
+        &:nth-child(6){
+          .price-name{
+            background-color: #353131;
+          }
+          .price-value-row{
+            color: #353131;
+          }
+        }
+        .price-name{
+          color: #fff;
+          padding-left: 15px;
+          padding-right: 15px;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          font-size: 22px;
+          font-weight: 700;
+          background-color: #ccc;
+          border-radius: 12px 11px 0px 0px;
+          .price-name-number{
+            font-size: 36px;
+          }
+        }
+        .price-descr{
+          padding-top: 15px;
+          padding-bottom: 10px;
+          font-size: 18px;
+        }
+        .price-value-row{
+          font-weight: 800;
+          font-size: 30px;
+          font-family: $font-ptsans;
+          padding-bottom: 20px;
+        }
       }
     }
   }
