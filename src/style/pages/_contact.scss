@@ -1,0 +1,48 @@
+.contacts{
+  padding-top: 50px;
+  .flex-wrapper{
+    display: flex;
+    padding-bottom: 70px;
+    .contact-photo{
+      margin-right: 30px;
+      img{
+        border: 15px solid #f5f4f4;
+      }
+    }
+    .contact-content{
+      .contact-text{
+        font-size: 20px;
+        line-height: 1.2;
+        padding-bottom: 30px;
+      }
+      .contact-info{
+        font-size: 20px;
+        .contact-row{
+          padding-bottom: 25px;
+          i{
+            margin-right: 5px;
+            display: inline-block;
+            vertical-align: middle;
+          }
+          &.phone-row{
+            display: flex;
+            align-items: center;
+          }
+          .phone-list{
+            font-family: $font-ptsans;
+            font-size: 18px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+          }
+          a{
+            color:  #342f2a;
+            &:hover{
+              color: $color-link-hover;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -17,7 +17,7 @@ a:hover{
   color: $color-link-hover;
 }
 main {
-   min-height: calc(100vh - (#{$footer-height} + #{$header-height}));
+   min-height: calc(100vh - (#{$footer-height} + 29px));
 }
 
 .left-sidebar{

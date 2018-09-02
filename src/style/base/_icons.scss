@@ -1,6 +1,15 @@
 i{
   display: inline-block;
 }
+.ic-phone-num{
+  @include sprite($ic-phone-num);
+}
+.ic-email{
+  @include sprite($ic-email);
+}
+.ic-point{
+  @include sprite($ic-point);
+}
 .ic-vk{
   @include sprite($ic-vk);
   &:hover{

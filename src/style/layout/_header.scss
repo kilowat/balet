@@ -105,12 +105,16 @@
   height: 100vh;
   background-repeat: no-repeat;
   margin-top: -100px;
-  padding-top: 170px;
+  padding-top: 370px;
   background-size: cover;
   background-position: center;
+  &.fix-hight{
+    height: 310px;
+    padding-top: 175px;
+  }
   .first-screen{
     .first-screen-header{
-      margin-top: 250px;
+      margin-top: 50px;
       margin-left: 460px;
       display: inline-block;
       font-family: $font-alegra;
@@ -129,6 +133,11 @@
         content: "";
         margin-top: 20px;
       }
+    }
+    .page-header{
+      color: #fff;
+      font-size: 38px;
+      font-weight: 400;
     }
   }
   .arrow-row {

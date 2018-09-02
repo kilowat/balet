@@ -4,7 +4,7 @@
     justify-content: flex-end;
     .form-content{
       width: 45%;
-      margin-right: 15px;
+      margin-right: 35px;
       .form-text{
         h1{
           margin: 0;
@@ -13,6 +13,12 @@
           line-height: 1.2;
           color: #fff;
           margin-bottom: 20px;
+        }
+        &.medium-text{
+          h1{
+            font-size: 26px;
+            line-height: 1.1;
+          }
         }
       }
       .cost-text{
