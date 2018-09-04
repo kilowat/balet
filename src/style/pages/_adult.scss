@@ -1,10 +1,28 @@
 .adult-screen{
+  @include breakpoint(max-width $desktop-width){
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .flex-container{
     display: flex;
     justify-content: flex-end;
+      @include breakpoint(max-width $desktop-width){
+        justify-content: center;
+      }
+      @include breakpoint(max-width $pad-width){
+        flex-wrap: wrap;
+      }
     .form-content{
       width: 45%;
       margin-right: 35px;
+      @include breakpoint(max-width $pad-width){
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+        margin-bottom: 20px;
+      }
       .form-text{
         h1{
           margin: 0;
@@ -13,6 +31,7 @@
           line-height: 1.2;
           color: #fff;
           margin-bottom: 20px;
+          @include breakpoint(max-width $pad-width){font-size: 22px;}
         }
         &.medium-text{
           h1{
@@ -33,6 +52,7 @@
       .description-text{
         color: #fff;
         padding-right: 120px;
+        @include breakpoint(max-width $pad-width){padding-right: 0;}
       }
     }
     .form-block{
@@ -87,6 +107,13 @@
     width: 20%;
     display: inline-block;
     vertical-align: top;
+    @include breakpoint(max-width $desktop-width){
+      width: 49%;
+      margin-bottom: 25px;
+    }
+    @include breakpoint(max-width $pad-width){
+      width: 100%;
+    }
     .adult-lesson-name{
       color: #342f2a;
       font-size: 22px;
@@ -159,6 +186,11 @@
       margin: 20px;
       width: calc(50% - 150px);
       box-sizing: border-box;
+      @include breakpoint(max-width $desktop-width){
+        width: 100%;
+        margin: 0;
+        margin-bottom: 25px;
+      }
       .flex-container{
         display: flex;
         align-items: center;
@@ -207,6 +239,9 @@
     padding-left: 200px;
     padding-right: 200px;
     line-height: 1.2;
+    @include breakpoint(max-width $desktop-width){
+      padding: 0;
+    }
   }
 }
 .prices-block{
@@ -220,12 +255,21 @@
       flex-wrap: wrap;
       margin-left: -15px;
       margin-right: -15px;
+      @include breakpoint(max-width $mobile-width){margin: 0;}
       .price-item{
         margin: 15px;
         width: calc(33% - 30px);
         background-color: #fff;
         border-radius: 12px;
         text-align: center;
+        @include breakpoint(max-width $pad-width){
+          width: calc(50% - 30px);
+        }
+        @include breakpoint(max-width $mobile-width){
+          width: 100%;
+          margin: 0;
+          margin-bottom: 15px;
+        }
         &:nth-child(1){
           .price-name{
             background-color: #a9a6a6;

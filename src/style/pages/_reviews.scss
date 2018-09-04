@@ -1,0 +1,84 @@
+.reviews{
+  padding-top: 60px;
+  .reviews-list{
+    .reviews-item{
+      margin-bottom: 55px;
+      @include breakpoint(max-width $pad-width){
+        border-bottom: 1px solid #ddd;
+        padding-top: 5px;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+      }
+      .flex-container{
+        display: flex;
+        @include breakpoint(max-width $pad-width){
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+        .reviews-pic{
+          margin-right: 25px;
+          margin-top: 7px;
+          text-align: center;
+          @include breakpoint(max-width $pad-width){
+            margin-right: 0;
+          }
+          .auther-pic{
+            height: 120px;
+            width: 120px;
+            display: inline-block;
+            border-radius: 100%;
+            background-color: #dedad9;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            &:before{
+              display: block;
+              position: absolute;
+              height: calc(100% + 14px);
+              width: calc(100% + 14px);
+              border-radius: 100%;
+              border: 2px solid #ccc;
+              content: "";
+              padding: 10px;
+              left: 0;
+              top: 0;
+              margin-left: -7px;
+              margin-top: -7px;
+              box-sizing: border-box;
+            }
+          }
+          .reviews-name{
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 1.2;
+          }
+        }
+        .reviews-content{
+          font-weight: 300;
+          font-size: 18px;
+          line-height: 1.2;
+          margin-right: 50px;
+          @include breakpoint(max-width $pad-width){
+            margin-right: 0;
+          }
+          .reviews-detail-row{
+            margin-top: 30px;
+            text-align: right;
+            @include breakpoint(max-width $pad-width){
+              text-align: center;
+              margin-top: 20px;
+              margin-bottom: 20px;
+              margin-right: 0;
+            }
+          }
+        }
+        .reviews-info{
+          img{
+            border: 4px solid #f5f4f4;
+            max-width: 165px;
+          }
+        }
+      }
+    }
+  }
+}

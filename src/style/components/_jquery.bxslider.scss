@@ -103,6 +103,9 @@ ul.bxslider {
   height: 45px;
   width: 25px;
   margin-top: 15px!important;
+  @include breakpoint(max-width 1300px){
+    left:0;
+  }
   &:after{
     display: block;
     content: "";
@@ -135,6 +138,9 @@ ul.bxslider {
   height: 45px;
   width: 25px;
   margin-top: 15px!important;
+  @include breakpoint(max-width 1300px){
+    right:0;
+  }
   &:after{
     display: block;
     content: "";

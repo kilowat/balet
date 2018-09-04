@@ -23,15 +23,19 @@ $color-acent-hover: lighten($color-acent, 10%);
 $color-black: #000;
 ////////////////////////////////////
 
+
 $color-link-hover: $color-acent;
 
 ////////___size of layouts___///////
 $container-max-width: 1200px;
 $container-min-width: 320px;
 $container-padding: 15px;
-
-$desktop-width: 1000px;
-
+//////////_____screen size______//////////
+$desktop-width: 980px;
+$pad-width: 740px;
+$mobile-width: 480px;
+$small-width: 320px;
+///////////////////////
 $header-height: 100px;
 $footer-height: 290px;
 $sidebar-left: 240px;

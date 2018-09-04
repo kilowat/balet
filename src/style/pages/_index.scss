@@ -2,9 +2,16 @@
   padding-top: 15px;
   .flex-container{
     display: flex;
+    @include breakpoint(max-width $pad-width){
+      display: block;
+    }
     .about-video{
       width: 50%;
       margin-right: 10px;
+      @include breakpoint(max-width $pad-width){
+        width: 100%;
+        margin: 0;
+      }
     }
     .about-text{
       width: 50%;
@@ -13,8 +20,16 @@
       font-weight: 300;
       font-size: 18px;
       line-height: 1.2;
+      @include breakpoint(max-width $pad-width){
+        width: 100%;
+        margin: 0;
+      }
       .soc-network{
         margin-top: 70px;
+        @include breakpoint(max-width $pad-width){
+          margin-top: 25px;
+          text-align: center;
+        }
       }
     }
   }
@@ -31,6 +46,9 @@
     display: inline-block;
     color: #fff;
     text-align: left;
+    @include breakpoint(max-width $pad-width){
+        display: block;
+    }
     .banner-header{
       text-align: center;
       font-size: 37px;
@@ -41,6 +59,13 @@
       margin-top: 50px;
       display: inline-block;
       margin-bottom: 25px;
+      @include breakpoint(max-width $pad-width){
+          font-size: 22px;
+          text-align: center;
+          display: block;
+          width: 100%;
+          padding-top: 20px;
+      }
     }
     .banner-items-row{
       text-align: center;
@@ -79,12 +104,26 @@
 .teachers-block{
   background-color: #f5f4f4;
   padding-bottom: 100px;
+  @include breakpoint(max-width $mobile-width){
+    padding-bottom: 70px;
+  }
   .teacher-slider{
     .teacher-item{
       display: flex;
+      @include breakpoint(max-width 1300px){
+        padding-left: 60px;
+        padding-right: 60px;
+      }
+      @include breakpoint(max-width $mobile-width){
+        display: block;
+      }
       .teacher-pic{
         text-align: center;
         margin-right: 25px;
+        @include breakpoint(max-width $mobile-width){
+          margin: 0;
+          margin-bottom: 15px;
+        }
         img{
           border-radius: 100%;
           border: 1px solid #d7d2d1;
@@ -112,6 +151,11 @@
     font-weight: 300;
     line-height: 1.2;
     margin-bottom: 40px;
+    @include breakpoint(max-width $pad-width){
+      padding-left:0;
+      padding-right: 0;
+      font-size: 20px;
+    }
   }
   .lessons-list{
     display: flex;
@@ -124,6 +168,12 @@
       margin-left: -25px;
       margin-right: -25px;
       padding: 25px;
+      @include breakpoint(max-width $pad-width){
+        width: 50%;
+      }
+      @include breakpoint(max-width $mobile-width){
+        width: 100%;
+      }
       .lesson-pic{
 
       }
@@ -157,6 +207,12 @@
     .gallery-item{
       margin: 7px;
       width: calc(20% - 14px);
+      @include breakpoint(max-width $pad-width){
+        width: calc(25% - 14px);
+      }
+      @include breakpoint(max-width $mobile-width){
+        width: calc(50% - 14px);
+      }
       a{
         display: block;
         width: 100%;

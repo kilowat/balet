@@ -19,7 +19,6 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap-sass": "~3.3.6",
-    "breakpoint-sass": "^2.7.1"
+
   }
 }

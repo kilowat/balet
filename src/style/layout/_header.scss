@@ -12,7 +12,7 @@
         .flex-container{
           height: 90px;
           .logo-cell{
-            width: 400px;
+            //width: 400px;
             img{
               height: 70px;
             }
@@ -34,8 +34,14 @@
         text-align: center;
         .first-screen-header{
           margin-top: 360px;
+          @include breakpoint(max-width $desktop-width){
+            margin: 0;
+          }
         }
       }
+    }
+    @include breakpoint(max-width $desktop-width){
+      display: none;
     }
   }
   .header-top-block .flex-container {
@@ -47,9 +53,19 @@
     margin-right: -20px;
     color: #fff;
     font-family: $font-ptsans;
+    @include breakpoint(max-width 1100px){
+      margin-left: -15px;
+      margin-right: -15px;
+    }
     .top-cell{
       padding-left: 20px;
       padding-right: 20px;
+      @include breakpoint(max-width 1100px){
+        margin-left: 15px;
+        margin-right: 15px;
+        padding-left: 0px;
+        padding-right: 0px;
+      }
       &.logo-cell{
         >a{
           display: flex;
@@ -62,6 +78,9 @@
             color: #fff;
             font-size: 42px;
             font-family: $font-pt-serif;
+            @include breakpoint(max-width 1050px){
+              font-size: 30px;
+            }
           }
         }
       }
@@ -102,14 +121,22 @@
   }
 }
 .full-screen{
-  height: 100vh;
+  min-height: 100vh;
   background-repeat: no-repeat;
   margin-top: -100px;
   padding-top: 370px;
   background-size: cover;
   background-position: center;
-  &.fix-hight{
-    height: 310px;
+  @include breakpoint(max-width $desktop-width){
+    margin: 0;
+    padding: 0;
+  }
+  &.fix-hight-contact{
+    min-height: 310px;
+    padding-top: 175px;
+  }
+  &.fix-hight-reviews{
+    min-height: 410px;
     padding-top: 175px;
   }
   .first-screen{
@@ -132,12 +159,33 @@
         background-color: $color-acent;
         content: "";
         margin-top: 20px;
+        @include breakpoint(max-width $desktop-width){
+          display: none;
+        }
+      }
+      @include breakpoint(max-width $desktop-width){
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        width: auto;
+        display:inline-block;
+      }
+    }
+    .screen-text-descr{
+      color: #fff;
+      font-size: 22px;
+      padding-left: 20%;
+      padding-right: 20%;
+      line-height: 1.2;
+      @include breakpoint(max-width $pad-width){
+        padding: 0;
       }
     }
     .page-header{
       color: #fff;
       font-size: 38px;
       font-weight: 400;
+      margin-bottom: 15px;
     }
   }
   .arrow-row {
