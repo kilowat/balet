@@ -1,6 +1,6 @@
 .adult-screen{
   @include breakpoint(max-width $desktop-width){
-    min-height: 100vh;
+    min-height: atuo;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,6 +47,7 @@
           font-size: 32px;
           font-weight: 700;
           font-family: $font-ptsans;
+          @include breakpoint(max-width $mobile-width){display: block; text-align: center;}
         }
       }
       .description-text{

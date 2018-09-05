@@ -10,4 +10,16 @@ $(document).ready(function(){
 
   $('.fancybox').fancybox();
 
+  progressively.init({
+    delay: 10,
+    throttle: 100,
+    smBreakpoint: 600,
+    onLoad: function(elem) {
+      console.log(elem);
+    },
+    onLoadComplete: function() {
+      console.log('All images have finished loading!');
+    }
+  });
+
 });
