@@ -37,17 +37,19 @@
           h1{
             font-size: 26px;
             line-height: 1.1;
+            @include breakpoint(max-width $pad-width){font-size: 20px;}
           }
         }
       }
       .cost-text{
         color: #b5001e;
         font-size: 24px;
+        @include breakpoint(max-width $mobile-width){display: block; text-align: center; font-size: 22px;}
         strong{
           font-size: 32px;
           font-weight: 700;
           font-family: $font-ptsans;
-          @include breakpoint(max-width $mobile-width){display: block; text-align: center;}
+          @include breakpoint(max-width $mobile-width){display: block; text-align: center; font-size: 30px;}
         }
       }
       .description-text{
@@ -103,6 +105,9 @@
 .adult-lesson-list{
   text-align: center;
   padding-bottom: 80px;
+  @include breakpoint(max-width $pad-width){
+    padding-bottom: 20px;
+  }
   .adult-lesson-item{
     text-align: center;
     width: 20%;
@@ -131,6 +136,9 @@
   .group-lessons-list{
     text-align: center;
     padding-bottom: 80px;
+    @include breakpoint(max-width $mobile-width){
+      padding-bottom: 20px;
+    }
     .group-lesson-item{
       text-align: center;
       display: inline-block;
@@ -242,6 +250,8 @@
     line-height: 1.2;
     @include breakpoint(max-width $desktop-width){
       padding: 0;
+      margin-top: 15px;
+      margin-bottom: 35px;
     }
   }
 }

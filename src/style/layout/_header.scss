@@ -205,6 +205,7 @@
       line-height: 1.2;
       @include breakpoint(max-width $pad-width){
         padding: 0;
+        font-size: 20px;
       }
     }
     .page-header{
@@ -212,6 +213,10 @@
       font-size: 38px;
       font-weight: 400;
       margin-bottom: 15px;
+      @include breakpoint(max-width $pad-width){
+        font-size: 30px;
+        margin-top: 0px;
+      }
     }
   }
   .arrow-row {

@@ -1,0 +1,141 @@
+.schedule-compontent{
+  margin-top: 40px;
+  margin-bottom: 100px;
+  .schedule-nav-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .schedule-nav-block{
+      a{
+        color: #342f2a;
+        font-size: 22px;
+        @include breakpoint(max-width $pad-width){
+          font-size: 20px;
+        }
+        @include breakpoint(max-width $mobile-width){
+          font-size: 16px;
+        }
+        >*{
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+    }
+    .schedule-nav-next-date a{
+      @include breakpoint(max-width $mobile-width){
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+      }
+    }
+    .schedule-nav-prev-date a{
+      @include breakpoint(max-width $mobile-width){
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    .schedule-nav-current-date{
+      font-size: 28px;
+      font-weight: 700;
+      @include breakpoint(max-width $pad-width){
+        font-size: 22px;
+      }
+      @include breakpoint(max-width $mobile-width){
+        font-size: 18px;
+        text-align: center;
+      }
+    }
+  }
+  .schedule-time-lenght-row{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    .schedule-time-lenght{
+      display: inline-block;
+      label{
+        background-color: #9e9e9e;
+        height: 42px;
+        display: inline-block;
+        width: 120px;
+        cursor: pointer;
+        color: #fff;
+        line-height: 2.5;
+        &[for='month-radio']{
+          border-radius: 20px 0px 0px 20px;
+        }
+        &[for='day-radio']{
+          border-radius: 0px 20px 20px 0px;
+        }
+        @include breakpoint(max-width $mobile-width){width: 90px;}
+      }
+      input{
+        display: none;
+        &:checked+label{
+          font-weight: 700;
+          background-color: $color-acent;
+        }
+      }
+    }
+  }
+  .month-table{
+    .schedule-week-row{
+      display: flex;
+      .schedule-week-cell{
+        text-align: center;
+        background-color: #5c5858;
+        width: 14.28%;
+        border: 1px solid #fff;
+        box-sizing: border-box;
+        color: #fff;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-weight: 600;
+        .week-full-name{
+          @include breakpoint(max-width $pad-width){
+            display: none;
+          }
+        }
+        .week-short-name{
+          display: none;
+          @include breakpoint(max-width $pad-width){
+            display: block;
+          }
+        }
+      }
+    }
+    .schedule-day-row{
+      display: flex;
+      justify-content: space-between;
+      .schedule-day-cell{
+        width: 14.28%;
+        border: 1px solid #fff;
+        box-sizing: border-box;
+        background-color: #f5f4f4;
+        min-height: 140px;
+        padding: 3px;
+        .schedule-day-number{
+          font-size: 22px;
+          padding-left: 8px;
+        }
+        .schedule-item{
+          line-height: 1;
+          background-color: #e4e3e3;
+          border-radius: 8px;
+          padding: 7px;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          margin-bottom: 7px;
+          font-size: 14px;
+          overflow: hidden;
+          .schedule-t{
+            margin-bottom: 2px;
+            font-weight: 600;
+          }
+          .schedule-text{
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+}

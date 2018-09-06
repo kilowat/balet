@@ -1,6 +1,65 @@
 i{
   display: inline-block;
 }
+.ic-prev-arrow{
+  left: 0;
+  position: relative;
+  height: 39px;
+  width: 25px;
+  margin-right: 10px;
+  &:after{
+    display: block;
+    content: "";
+    height: 3px;
+    width: 25px;
+    position: absolute;
+    background-color: #cdc6c1;
+    top: 8px;
+    transform: rotate(-45deg);
+    z-index: 1;
+  }
+  &:before{
+    display: block;
+    content: "";
+    height: 3px;
+    width: 25px;
+    position: absolute;
+    background-color: #cdc6c1;
+    top: 25px;
+    transform: rotate(-135deg);
+    z-index: 1;
+  }
+}
+.ic-next-arrow{
+  position: relative;
+  right: 0px;
+  height: 39px;
+  width: 25px;
+  margin-left: 15px;
+  &:after{
+    display: block;
+    content: "";
+    height: 3px;
+    width: 25px;
+    position: absolute;
+    background-color: #cdc6c1;
+    top: 8px;
+    transform: rotate(45deg);
+    z-index: 1;
+  }
+  &:before{
+    display: block;
+    content: "";
+    height: 3px;
+    width: 25px;
+    position: absolute;
+    background-color: #cdc6c1;
+    top: 25px;
+    transform: rotate(135deg);
+    z-index: 1;
+  }
+}
+
 .ic-phone-num{
   @include sprite($ic-phone-num);
 }

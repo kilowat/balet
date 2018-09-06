@@ -1,10 +1,12 @@
 .reviews{
   padding-top: 60px;
+  @include breakpoint(max-width $pad-width){
+    padding-top: 20px;
+  }
   .reviews-list{
     .reviews-item{
       margin-bottom: 55px;
       @include breakpoint(max-width $pad-width){
-        border-bottom: 1px solid #ddd;
         padding-top: 5px;
         padding-bottom: 15px;
         margin-bottom: 15px;
@@ -51,6 +53,10 @@
             font-weight: 500;
             font-size: 22px;
             line-height: 1.2;
+            @include breakpoint(max-width $pad-width){
+              margin-top: 10px;
+              margin-bottom: 10px;
+            }
           }
         }
         .reviews-content{
