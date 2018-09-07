@@ -138,4 +138,87 @@
       }
     }
   }
+  .week-table{
+    .week-name-row{
+      display: flex;
+      background-color: #f5f4f4;
+      justify-content: space-between;
+      //align-items: flex-start;
+      @include breakpoint(max-width $pad-width){
+        display: block;
+      }
+      margin-bottom: 15px;
+      .week-name-cell{
+        flex-grow: 1;
+        text-align: center;
+        padding: 15px;
+        font-size: 18px;
+        line-height: 1;
+        .week-name{
+          font-weight: 700;
+          margin-bottom: 5px;
+        }
+      }
+      .week-items-cell{
+        padding: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        flex-grow: 100;
+        .week-items{
+          &.empty-day{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            font-weight: 300;
+          }
+          .week-item{
+            margin-bottom: 5px;
+            border-radius: 8px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color: #e4e3e3;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @include breakpoint(max-width $pad-width){
+              display: block;
+              text-align: center;
+            }
+            &:last-child{
+              margin-bottom: 0;
+            }
+            .week-item-cell{
+              &.week-item-time{
+
+              }
+              &.week-lesson-name{
+
+              }
+              &.week-age{
+                font-weight: 300;
+              }
+              &.week-hall{
+                font-weight: 300;
+              }
+              &.week-teacher-info{
+                font-weight: 300;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img{
+                  margin-right: 10px;
+                  border-radius: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
 }

@@ -1,0 +1,131 @@
+{% extends './../layouts/master.html' %}
+{% block content %}
+<div class="full-screen fix-hight-contact progressive__bg progressive--not-loaded" data-progressive="./images/top-bg-schedule.jpg" style="background-image:url(./images/top-bg-schedule-low.jpg);background-color:#000">
+  <div class="first-screen">
+      <div class="wrapper text-center">
+        <h1 class="page-header">Расписание занятий</h1>
+      </div>
+	</div>
+</div>
+
+<div class="schedule">
+  <div class="wrapper">
+    <div class="schedule-compontent">
+      <div class="schedule-nav-row">
+        <div class="schedule-nav-prev-date schedule-nav-block">
+          <a href="" title=""><i class="ic-prev-arrow"></i><span class="prev-date-text">27.08-2.09</span></a>
+        </div>
+        <div class="schedule-nav-current-date schedule-nav-block">
+          <span>3 сент. 2018 - 9 сент. 2018</span>
+        </div>
+        <div class="schedule-nav-next-date schedule-nav-block">
+          <a href="" title=""><span class="prev-date-text">4.09 - 4.11</span><i class="ic-next-arrow"></i></a>
+        </div>
+      </div>
+
+      <div class="schedule-time-lenght-row">
+        <div class="schedule-time-lenght">
+          <input id="month-radio" checked="checked" type="radio" name="time-lenght" value="month">
+          <label for="month-radio">Месяц</label>
+
+          <input id="week-radio" type="radio" name="time-lenght" value="week">
+          <label for="week-radio">Неделя</label>
+
+          <input id="day-radio" type="radio" name="time-lenght" value="day">
+          <label for="day-radio">День</label>
+
+        </div>
+      </div>
+
+      <div class="schedule-table week-table">
+        <div class="table">
+
+          <div class="week-name-row">
+            <div class="week-name-cell">
+              <div class="week-name">Понедельник</div>
+              <div class="week-date">3 сентября 2018</div>
+            </div>
+            <div class="week-items-cell">
+              <div class="week-items">
+                <div class="week-item">
+                  <div class="week-item-time week-item-cell"><i class="ic-time"></i>15:30</div>
+                  <div class="week-lesson-name  week-item-cell">
+                    Классика. Базовый уровень 1
+                  </div>
+                  <div class="week-age  week-item-cell">
+                    Взрослые
+                  </div>
+                  <div class="week-hall  week-item-cell">
+                    Зал 1
+                  </div>
+                  <div class="week-teacher-info  week-item-cell">
+                    <img src="./images/mini-pic.jpg" alt="">
+                    <span class="teacher-name">Александр Пятовский</span>
+                  </div>
+                </div>
+                <div class="week-item">
+                  <div class="week-item-time week-item-cell"><i class="ic-time"></i>15:30</div>
+                  <div class="week-lesson-name  week-item-cell">
+                    Классика. Базовый уровень 1
+                  </div>
+                  <div class="week-age  week-item-cell">
+                    Взрослые
+                  </div>
+                  <div class="week-hall  week-item-cell">
+                    Зал 1
+                  </div>
+                  <div class="week-teacher-info  week-item-cell">
+                    <img src="./images/mini-pic.jpg" alt="">
+                    <span class="teacher-name">Александр Пятовский</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="week-name-row">
+            <div class="week-name-cell">
+              <div class="week-name">Вторник</div>
+              <div class="week-date">4 сентября 2018</div>
+            </div>
+            <div class="week-items-cell">
+              <div class="week-items">
+                <div class="week-item">
+                  <div class="week-item-time week-item-cell"><i class="ic-time"></i>15:30</div>
+                  <div class="week-lesson-name  week-item-cell">
+                    Классика. Базовый уровень 1
+                  </div>
+                  <div class="week-age  week-item-cell">
+                    Взрослые
+                  </div>
+                  <div class="week-hall  week-item-cell">
+                    Зал 1
+                  </div>
+                  <div class="week-teacher-info  week-item-cell">
+                    <img src="./images/mini-pic.jpg" alt="">
+                    <span class="teacher-name">Александр Пятовский</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="week-name-row">
+            <div class="week-name-cell">
+              <div class="week-name">Среда</div>
+              <div class="week-date">4 сентября 2018</div>
+            </div>
+            <div class="week-items-cell">
+              <div class="week-items empty-day">
+                В этот день занятий нет
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
