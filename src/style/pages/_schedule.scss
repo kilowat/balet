@@ -192,7 +192,13 @@
             }
             .week-item-cell{
               &.week-item-time{
-
+                >*{
+                  display: inline-block;
+                  vertical-align: middle;
+                }
+                i{
+                  margin-right: 5px;
+                }
               }
               &.week-lesson-name{
 
@@ -220,5 +226,70 @@
       }
     }
   }
+  .day-table{
+    .schedule-day-items{
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -14px;
+      margin-right: -14px;
+      @include breakpoint(max-width $pad-width){
 
+      }
+      .schedule-day-item{
+        margin:7px;
+        width: calc(50% - 14px);
+        background-color: #f5f4f4;
+        padding: 10px;
+        display: flex;
+        @include breakpoint(max-width $pad-width){
+          display: block;
+          width: 100%;
+          text-align: center;
+        }
+        .schedule-pic{
+          width: 160px;
+          height: 160px;
+          margin-right: 20px;
+          background-size: cover;
+          display: inline-block;
+        }
+        .schedule-content{
+          .schedule-time{
+            margin-bottom: 10px;
+            >*{
+              display: inline-block;
+              vertical-align: middle;
+            }
+            i{
+              margin-right: 5px;
+            }
+            span{
+              line-height: 1;
+            }
+          }
+          .schedule-lesson-name{
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 5px;
+          }
+          .schedule-info-row{
+            margin-bottom: 25px;
+            &:last-child{
+              margin-bottom: 0;
+            }
+            .schedule-teacher-name{
+              display: flex;
+              align-items: center;
+              @include breakpoint(max-width $pad-width){
+                justify-content: center;
+              }
+              img{
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
